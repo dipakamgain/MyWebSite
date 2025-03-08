@@ -6,124 +6,264 @@
     <title>Dipak Babu Amgain - Personal Website</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
             color: white;
+            padding: 20px;
+            text-align: center;
         }
-        .navbar {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 15px;
+
+        nav {
+            background-color: #004080;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            justify-content: space-between;
+            margin-top: 20px;
         }
-        .navbar a {
+
+        .main-content .left-column {
+            width: 70%;
+        }
+
+        .main-content .right-column {
+            width: 25%;
+        }
+
+        .main-content h2 {
+            color: #003366;
+        }
+
+        .main-content p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
         }
-        .container {
-            width: 60%;
-            margin: 30px auto;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .gallery img {
-            width: 150px;
-            height: 150px;
-            border-radius: 10px;
-            object-fit: cover;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        }
-        h1, h2 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #ffd700;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 14px;
-            opacity: 0.8;
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 80%;
-            }
-            .gallery img {
-                width: 120px;
-                height: 120px;
-            }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
-    </div>
-    
-    <div class="container" id="about">
+
+    <header>
         <h1>Dipak Babu Amgain</h1>
-        <p><span class="highlight">Occupation:</span> Lecturer of Mathematics</p>
-        <p><span class="highlight">Address:</span> Kirtipur</p>
-        <p><span class="highlight">Research Area:</span> Network Optimization</p>
-        <p>Welcome to my personal website! I am passionate about mathematics and research in network optimization.</p>
+        <p>Mathematician | Educator | Researcher</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#academic">Academic Qualifications</a>
+        <a href="#publications">Publications</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#teaching">Teaching Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my personal website! I am a mathematician and educator with a passion for teaching and research. I hold an M.Phil. in Mathematics from Tribhuvan University, where I focused on [specific field, e.g., "applied mathematics and optimization"]. I have been teaching mathematics at various levels for over a decade and have contributed to several publications and presentations in the field of mathematics.
+            </p>
+            <p>
+                My research interests include [list your interests, e.g., "applied mathematics, optimization, and mathematical modeling"]. I am currently working as a [your current position, e.g., "Lecturer at National School of Sciences (NIST)"], where I teach mathematics to high school and undergraduate students.
+            </p>
+        </section>
+
+        <section id="academic">
+            <h2>Academic Qualifications</h2>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Board</th>
+                    <th>Institution</th>
+                    <th>Division/Percentage</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>M.Phil.</td>
+                    <td>T.U.</td>
+                    <td>Central Department of Mathematics, Kirtipur</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Masters Degree</td>
+                    <td>T.U.</td>
+                    <td>University Campus, Kirtipur, Kathmandu</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>Bachelors Degree</td>
+                    <td>T.U.</td>
+                    <td>Janamaitri Multiple Campus, Kuleshwor, Kathmandu</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>High School</td>
+                    <td>H.S.E.B.</td>
+                    <td>Saheed Smriti Multiple Campus, Chitwan</td>
+                    <td>2003</td>
+                </tr>
+                <tr>
+                    <td>School</td>
+                    <td>S.L.C.</td>
+                    <td>Shree Prithvi Sec. School, Jurpani, Chitwan</td>
+                    <td>2001</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <h3>Books</h3>
+            <ul>
+                <li>ABC of Mathematics for ICTE, B.Ed., Sukunda Publication, 2073 (Co-author)</li>
+                <li>Treasure Mathematics for Grade XI, NIST Foundation, 2072 (Co-author)</li>
+            </ul>
+            <h3>Articles</h3>
+            <ul>
+                <li>Quickest flow algorithms with time-varying attributes, Journal of Institute of Science and Technology, Tribhuvan University, 26(1): 63-73, 2021</li>
+            </ul>
+        </section>
+
+        <section id="presentations">
+            <h2>Presentations</h2>
+            <ul>
+                <li>Transportation Network Optimization for Emergency Planning and Logistics Support (Online Seminar), 28th-29th May, 2022, Nepal.</li>
+                <li>Applied Mathematics in Science and Engineering (2nd International Online Conference), 24th-26th March, 2022, India.</li>
+                <li>International Conference - Kathmandu Humboldtkolleg 2022: Interdisciplinary Collaboration for Strengthening Science and Culture, Oct. 16-19, 2022, Kathmandu, Nepal.</li>
+                <li>Discrete-time quickest flow problem with time-varying attributes (DTQFP-TVA), 2020 Mindanawan Math-Stat International Webcon, November 4, 11, and 18, 2020 (Online).</li>
+            </ul>
+        </section>
+
+        <section id="workshops">
+            <h2>Workshops and Participation</h2>
+            <ul>
+                <li>Workshop on Data Visualization using Python, 14th-17th July, 2022, organized at RR Campus.</li>
+                <li>Capacity Building Workshop for Mathematics Facilities of Grade 11 and 12 (CBWMF-2022), organized by Nepal Mathematical Society, Jestha 14-18, 2079 (Virtual Mode) and Jestha 26-28, 2079 (Physical Mode).</li>
+            </ul>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching Experience</h2>
+            <table>
+                <tr>
+                    <th>S.N.</th>
+                    <th>Organization</th>
+                    <th>Time Period</th>
+                    <th>Major Duties & Responsibilities</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>National School of Sciences (NIST), Lainchour, Kathmandu</td>
+                    <td>2012 - 2024</td>
+                    <td>Teaching Mathematics in 10+2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Pathshala PreUni Program, Baneshwor</td>
+                    <td>2022 - 2024</td>
+                    <td>Teaching Mathematics in High School</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>National Institute of Sciences (NIST), Lalitpur</td>
+                    <td>2015 - 2024</td>
+                    <td>Teaching Mathematics in 10+2</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Central Department of Mathematics, T.U., Kirtipur</td>
+                    <td>2017 - 2024</td>
+                    <td>Teaching Assistant</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Patan Nistha Campus, Lalitpur</td>
+                    <td>2012 - 2021</td>
+                    <td>Lecturer for BBS, BCA</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>GEMS Institute of Higher Education, Dhapakhel, Kathmandu</td>
+                    <td>2010 - 2011</td>
+                    <td>Teaching Mathematics in GCE A-level and 10+2</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Janamaitri Multiple Campus, Kuleshwor, Kathmandu</td>
+                    <td>2008 - 2019</td>
+                    <td>Lecturer for BBS, MBS, BA, BEd</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>N.R. College, Nepaltar, Kathmandu</td>
+                    <td>2008 - 2017</td>
+                    <td>Teaching Mathematics in BA and BEd</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                If you would like to get in touch, feel free to reach out via email or phone.
+            </p>
+            <ul>
+                <li><strong>Email:</strong> dipakamgain@gmail.com</li>
+                <li><strong>Phone:</strong> 9849246484</li>
+                <li><strong>Address:</strong> Kirtipur, Kathmandu, Nepal</li>
+            </ul>
+        </section>
     </div>
-    
-    <div class="container" id="gallery">
-        <h2>Photo Gallery</h2>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/150" alt="Gallery Image 1">
-            <img src="https://via.placeholder.com/150" alt="Gallery Image 2">
-            <img src="https://via.placeholder.com/150" alt="Gallery Image 3">
-        </div>
-    </div>
-    
-    <div class="container" id="research">
-        <h2>Optimize Your Network Flow for Maximum Efficiency</h2>
-        <p>In the realm of network design and logistics, solving network flow problems is crucial for ensuring seamless operations and optimal resource allocation. Network flow optimization focuses on improving the movement of data, materials, or resources across interconnected systems.</p>
-        <h3>What is a Network Flow Problem?</h3>
-        <p>A network flow problem involves determining the best way to transport goods, information, or services through a network while adhering to capacity constraints, minimizing costs, or maximizing efficiency.</p>
-        <h3>Key Types of Network Flow Problems:</h3>
-        <ul>
-            <li><strong>Maximum Flow Problem:</strong> Finding the highest possible flow through a network without exceeding capacity limits.</li>
-            <li><strong>Minimum Cost Flow Problem:</strong> Optimizing costs while ensuring the desired flow is maintained.</li>
-            <li><strong>Shortest Path Problem:</strong> Identifying the most efficient path between two points within a network.</li>
-            <li><strong>Multi-Commodity Flow Problem:</strong> Managing the flow of multiple commodities simultaneously within the same network.</li>
-        </ul>
-        <h3>Our Network Flow Optimization Services</h3>
-        <ul>
-            <li><strong>Flow Capacity Optimization:</strong> We analyze and adjust network capacities to maximize throughput without overloading resources.</li>
-            <li><strong>Cost Reduction Strategies:</strong> Our optimization algorithms help minimize operational costs while ensuring smooth network operations.</li>
-            <li><strong>Route Optimization & Pathfinding:</strong> We use advanced algorithms to determine the most efficient routes for data, goods, or services within a network.</li>
-            <li><strong>Real-Time Network Analysis:</strong> We deploy real-time monitoring tools to detect bottlenecks and optimize flow dynamically.</li>
-            <li><strong>Multi-Nodal Network Optimization:</strong> For complex networks with multiple sources and destinations, we develop multi-commodity flow models to ensure optimal distribution.</li>
-        </ul>
-    </div>
-    
-    <div class="footer">&copy; 2025 Dipak Babu Amgain. All Rights Reserved.</div>
+
+    <footer>
+        <p>&copy; 2025 Dipak Babu Amgain. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+
 </body>
 </html>
